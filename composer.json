@@ -1,0 +1,45 @@
+{
+    "name": "nicxon/temp-download-links",
+    "description": "Laravel package to generate temporary download links with expiry time and max download limits.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Nicjoo",
+            "email": "dev@nicxonsolutions.com",
+            "homepage": "https://nicxonsolutions.com",
+            "role": "Developer"
+        },
+        {
+            "name": "PT. Nicxon International Solutions",
+            "homepage": "https://nicxonsolutions.com",
+            "role": "Organization"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "temporary download link",
+        "secure download",
+        "tokenized download",
+        "file sharing",
+        "link expiration"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nicxon\\TempDownload\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nicxon\\TempDownload\\TempDownloadServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
